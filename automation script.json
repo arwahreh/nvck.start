@@ -1,0 +1,119 @@
+{
+  "HTML5 Starter": {
+    "prefix": "!html",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head>",
+      "    <meta charset=\"UTF-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <title>${1:Document}</title>",
+      "    <link rel=\"stylesheet\" href=\"${2:style.css}\">",
+      "</head>",
+      "<body>",
+      "    $0",
+      "    <script src=\"${3:script.js}\"></script>",
+      "</body>",
+      "</html>"
+    ]
+  },
+  "Python Starter": {
+    "prefix": "!py",
+    "body": [
+      "def main():",
+      "    $0",
+      "",
+      "if __name__ == \"__main__\":",
+      "    main()"
+    ]
+  },
+  "FastAPI Starter": {
+    "prefix": "!fastapi",
+    "body": [
+      "from fastapi import FastAPI",
+      "",
+      "app = FastAPI()",
+      "",
+      "@app.get(\"/\")",
+      "async def root():",
+      "    return {\"message\": \"OK\"}",
+      "",
+      "if __name__ == \"__main__\":",
+      "    import uvicorn",
+      "    uvicorn.run(\"main:app\", host=\"0.0.0.0\", port=8000, reload=True)"
+    ]
+  },
+  "Django Settings Starter": {
+    "prefix": "!django",
+    "body": [
+      "import os",
+      "from pathlib import Path",
+      "",
+      "BASE_DIR = Path(__file__).resolve().parent.parent",
+      "SECRET_KEY = '${1:django-insecure-key}'",
+      "DEBUG = True",
+      "ALLOWED_HOSTS = []",
+      "INSTALLED_APPS = [",
+      "    'django.contrib.admin',",
+      "    'django.contrib.auth',",
+      "    'django.contrib.contenttypes',",
+      "    'django.contrib.sessions',",
+      "    'django.contrib.messages',",
+      "    'django.contrib.staticfiles',",
+      "]",
+      "$0"
+    ]
+  },
+  "Rust Starter": {
+    "prefix": "!rust",
+    "body": [
+      "fn main() {",
+      "    $0",
+      "}"
+    ]
+  },
+  "Java Starter": {
+    "prefix": "!java",
+    "body": [
+      "public class ${1:Main} {",
+      "    public static void main(String[] args) {",
+      "        $0",
+      "    }",
+      "}"
+    ]
+  },
+  "C Starter": {
+    "prefix": "!c",
+    "body": [
+      "#include <stdio.h>",
+      "#include <stdlib.h>",
+      "",
+      "int main(void) {",
+      "    $0",
+      "    return EXIT_SUCCESS;",
+      "}"
+    ]
+  },
+  "C++ Starter": {
+    "prefix": "!cpp",
+    "body": [
+      "#include <iostream>",
+      "",
+      "int main() {",
+      "    $0",
+      "    return 0;",
+      "}"
+    ]
+  },
+  "SQL Starter": {
+    "prefix": "!sql",
+    "body": [
+      "CREATE TABLE ${1:table_name} (",
+      "    id INTEGER PRIMARY KEY AUTOINCREMENT,",
+      "    ${2:column_name} ${3:TEXT} NOT NULL",
+      ");",
+      "",
+      "INSERT INTO $1 ($2) VALUES ($0);"
+    ]
+  }
+}
