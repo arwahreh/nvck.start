@@ -19,5 +19,12 @@
 
 ..................>>>>>>put your code in the comment spaces<<<<<<<<<<..........
 >>>>>>>>
->>>>>>>>>>
+>>>>>>>>>>>>>>>>>..>>>>>>>>>>>>>>>>>>>>>>>>>....Updates. ><<<<<<<<<<<<<<<<<<<
+added lua stater 
+--
+---
+--
+Updated automation script.json
+ just follow procees to re update it in snippets 
+<<<>>...i will be updating all prgramming lagauges in the script..........>>>
 >>>>>>>>>>>>>>> victor 

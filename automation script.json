@@ -115,5 +115,16 @@
       "",
       "INSERT INTO $1 ($2) VALUES ($0);"
     ]
+  },
+  "Lua Starter": {
+    "prefix": "!lua",
+    "body": [
+      "-- Local variables and functions",
+      "local function main()",
+      "    $0",
+      "end",
+      "",
+      "main()"
+    ]
   }
 }
